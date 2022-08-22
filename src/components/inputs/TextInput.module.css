@@ -1,0 +1,19 @@
+.text-input-area {
+    width: 18rem;
+    min-height: 3rem;
+    background-color: transparent;
+    color: #849096;
+    border: none;
+    border-bottom: 1px solid #849096;
+    outline: none;
+    font-size: medium;
+    align-self: flex-end;
+}
+
+.text-input-area[type="text"] {
+    color: #ffff;
+}
+
+.text-input-area::placeholder {
+    color: #849096;
+}

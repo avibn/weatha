@@ -1,0 +1,13 @@
+.details-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.light-text {
+    font-weight: 300;
+    color: #d7e0e1;
+}
+
+.number-text {
+    font-weight: 400;
+}

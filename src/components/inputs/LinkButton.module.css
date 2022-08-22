@@ -1,0 +1,14 @@
+.link-btn {
+    color: #a1aeb5;
+    font-weight: 100;
+    text-align: left;
+    font-size: 1rem;
+    border: none;
+    background-color: transparent;
+    max-width: fit-content;
+}
+
+.link-btn:hover {
+    font-weight: 400;
+    cursor: pointer;
+}

@@ -1,0 +1,14 @@
+.search-btn {
+    margin-right: -70px;
+    background-color: #d66c05;
+    border: none;
+    outline: none;
+    height: 85px;
+    width: 85px;
+    transition: 0.3s;
+}
+
+.search-btn:hover {
+    background-color: #b35b04;
+    cursor: pointer;
+}
