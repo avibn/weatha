@@ -1,12 +1,17 @@
+import { useEffect, useState } from "react";
+import searchByName from "./api/WeatherAPI";
 import "./App.css";
 import InfoRow from "./components/InfoRow";
 import LinkButton from "./components/inputs/LinkButton";
 import SearchButton from "./components/inputs/SearchButton";
 import TextInput from "./components/inputs/TextInput";
+import WeatherSearch from "./components/WeatherSearch";
 import WeatherWidget from "./components/WeatherWidget";
 // import Image from "./assets/cloudy.png";
 
 function App() {
+  const [query, setQuery] = useState({});
+
   const onClick = () => {};
   return (
     <>
@@ -20,10 +25,7 @@ function App() {
             <WeatherWidget />
           </div>
           <div className="section-weather-info">
-            <div className="location-search">
-              <TextInput placeholder="Another location" />
-              <SearchButton />
-            </div>
+            <WeatherSearch setQuery={setQuery} />
             <div className="padded-section">
               <div className="text-rows">
                 <LinkButton text="Birmingham" onClick={onClick} />
