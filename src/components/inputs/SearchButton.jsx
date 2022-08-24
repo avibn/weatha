@@ -5,8 +5,8 @@ import { SearchIcon } from "../../icons";
 
 const SearchButton = ({ onClick = () => {} }) => {
   return (
-    <button className={classes["search-btn"]}>
-      <SearchIcon width={25} height={25} onClick={onClick} />
+    <button className={classes["search-btn"]} onClick={onClick}>
+      <SearchIcon width={25} height={25} />
     </button>
   );
 };
