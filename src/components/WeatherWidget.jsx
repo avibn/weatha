@@ -1,4 +1,5 @@
 import React from "react";
+import dateFormat from "dateformat";
 
 import classes from "./WeatherWidget.module.css";
 import { CloudyIcon } from "../icons";
@@ -6,21 +7,15 @@ import { CloudyIcon } from "../icons";
 const WeatherWidget = ({ temperature, weatherType, city, date }) => {
   return (
     <div className={classes["weather-widget"]}>
-      <p className={classes["temperature-text"]}>16°</p>
+      <p className={classes["temperature-text"]}>{Math.round(temperature)}°</p>
       <div className={classes["extra-info-box"]}>
         <div className={classes["location-date-box"]}>
-          <p className={classes["location-text"]}>London</p>
-          <p className={classes["extra-text"]}>06:09 - Monday, 9 Sep '22</p>
+          <p className={classes["location-text"]}>{city}</p>
+          <p className={classes["extra-text"]}>
+            {dateFormat(new Date(date * 1000), "HH:MM - dddd, d mmm 'yy")}
+          </p>
         </div>
-        <div className={classes["weather-icon-box"]}>
-          <CloudyIcon
-            width={50}
-            height={50}
-            fillOpacity={0.5}
-            strokeWidth={20}
-            stroke="#ffffff"
-          />
-        </div>
+        <img src={weatherType} alt="Weather icon" />
       </div>
     </div>
   );

@@ -6,13 +6,13 @@ const API_KEY = process.env.REACT_APP_OPENWEATHERMAP_API_KEY;
 function requestWeatherAPI(params = {}) {
     const searchParams = new URLSearchParams({
         ...params,
+        units: "metric",
         appid: API_KEY,
     });
 
-    axios.get(API_BASE + searchParams.toString()).then((response) => {
-        console.log(response.data);
-        return response.data;
-    });
+    // send the request
+    console.log("Sending request");
+    return axios.get(API_BASE + searchParams.toString()).then((res) => res.data);
 }
 
 function searchByName(cityName) {
@@ -26,3 +26,4 @@ function getIconURL(iconCode) {
 }
 
 export default searchByName;
+export { getIconURL };

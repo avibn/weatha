@@ -4,15 +4,13 @@ import TextInput from "./inputs/TextInput";
 
 import classes from "./WeatherSearch.module.css";
 
-const WeatherSearch = ({ setQuery }) => {
+const WeatherSearch = ({ searchHandler }) => {
   const [searchText, setSearchText] = useState("");
 
-  const searchClickHandler = () => {
-    // set new query
-    setQuery({
-      q: searchText,
-    });
-    setSearchText("");
+  const onClick = () => {
+    if (searchText) {
+      searchHandler(searchText);
+    }
   };
 
   return (
@@ -22,7 +20,7 @@ const WeatherSearch = ({ setQuery }) => {
         value={searchText}
         setState={setSearchText}
       />
-      <SearchButton onClick={searchClickHandler} />
+      <SearchButton onClick={onClick} />
     </div>
   );
 };
