@@ -5,8 +5,8 @@
 
 body {
     margin: 0;
-    font-family: "Rubik", sans-serif;
-    color: white;
+    font-family: "Rubik", sans-serif !important;
+    color: white !important;
 }
 
 h1 {
@@ -29,7 +29,6 @@ hr {
 }
 
 .background-image {
-    background-image: url("./assets/cloudy.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

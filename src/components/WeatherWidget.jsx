@@ -2,7 +2,6 @@ import React from "react";
 import dateFormat from "dateformat";
 
 import classes from "./WeatherWidget.module.css";
-import { CloudyIcon } from "../icons";
 
 const WeatherWidget = ({ temperature, weatherType, city, date }) => {
   return (

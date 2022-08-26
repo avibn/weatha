@@ -10,6 +10,7 @@ const WeatherSearch = ({ searchHandler }) => {
   const onClick = () => {
     if (searchText) {
       searchHandler(searchText);
+      setSearchText("");
     }
   };
 
