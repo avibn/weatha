@@ -9,6 +9,8 @@
 ## About <a name = "about"></a>
 
 This is a weather application made using ReactJS. This is my first react project.
+![Screenshot](images\screenshot1.png)
+![Screenshot](images\screenshot2.png)
 
 ## Getting Started <a name = "getting_started"></a>
 
@@ -35,4 +37,5 @@ npm start
 ## Acknowledgements <a name = "acknowledgements"></a>
 
 [Design Inspiration](https://dribbble.com/shots/7118235-Weather-DailyUI-037/attachments/121070?mode=media)
+
 [Background Images](https://unsplash.com/)
