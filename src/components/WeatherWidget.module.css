@@ -14,7 +14,6 @@
 }
 
 .location-date-box {
-    padding: 0rem 1.5rem;
     display: flex;
     flex-direction: column;
 }
@@ -27,6 +26,7 @@
 .temperature-text {
     font-size: 7rem;
     font-weight: 400;
+    padding-right: 1.5rem;
 }
 
 .location-text {
@@ -35,4 +35,15 @@
 
 .extra-text {
     font-size: 1rem;
+}
+
+
+/* Small devices (portrait tablets and large phones, 768px and down) */
+
+@media only screen and (max-width: 768px) {
+    .weather-widget {
+        flex-direction: column;
+        align-items: flex-start;
+        align-content: flex-start;
+    }
 }
